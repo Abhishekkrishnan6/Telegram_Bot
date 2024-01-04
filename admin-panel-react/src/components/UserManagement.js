@@ -19,7 +19,6 @@ const UserManagement = () => {
 
   const handleBlockUser = async (userId) => {
     try {
-      // Make a request to block the user
       await axios.put(`http://localhost:3000/block-user/${userId}`);
       alert('User blocked successfully!');
       fetchUsers();
@@ -30,7 +29,6 @@ const UserManagement = () => {
 
   const handleUnblockUser = async (userId) => {
     try {
-      // Make a request to unblock the user
       await axios.put(`http://localhost:3000/unblock-user/${userId}`);
       alert('User unblocked successfully!');
       fetchUsers();
@@ -62,7 +60,7 @@ const UserManagement = () => {
       <h2>User Management</h2>
       <ul>
         {users.map((user) => (
-          <li key={user._id}>
+          <li key={user._id} style={userBoxStyle}>
             {user._id} - {user.city}
             <button onClick={() => handleBlockUser(user._id)}>Block</button>
             <button onClick={() => handleUnblockUser(user._id)}>Unblock</button>
@@ -73,5 +71,12 @@ const UserManagement = () => {
     </div>
   );
 };
+const userBoxStyle = {
+    border: '1px solid #ccc',
+    borderRadius: '5px',
+    padding: '10px',
+    margin: '10px 0',
+  };
+  
 
 export default UserManagement;
