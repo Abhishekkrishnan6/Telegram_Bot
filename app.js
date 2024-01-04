@@ -21,15 +21,12 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-
-// Start the Express server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
 app.use("/", Routes);
 
-// Handle /start command
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
   const message =
@@ -37,7 +34,6 @@ bot.onText(/\/start/, (msg) => {
   bot.sendMessage(chatId, message);
 });
 
-// Handle /subscribe command
 bot.onText(/\/subscribe/, (msg) => {
   const chatId = msg.chat.id;
   subscribe(chatId, "India");
@@ -48,28 +44,25 @@ bot.onText(/\/subscribe/, (msg) => {
   bot.sendMessage(chatId, "To get update of any city just say city name.");
 });
 
-// Handle incoming messages
 bot.on("message", async (msg) => {
   const chatId = msg.chat.id;
   const message = msg.text.toLowerCase();
   
   var isCityAvilable = false;
   
-  // setting location
   if (message.startsWith("location=")) {
     isCityAvilable = true;
     var city = "Patna";
     city = message.substring(9, message.length);
     updateCity(chatId, city);
     bot.sendMessage(chatId, `Your city has been updated to ${city}.`);
-    // fetching weather of other locations
+
   } else if (message != "/subscribe" && message != "/start" && message != "/unsubscribe") {
     isCityAvilable = true;
     city = message;
   }
 
   if (isCityAvilable) {
-    // Fetching weather report
     var report = await weatherReport(city);
     bot.sendMessage(chatId, report);
   }
@@ -83,6 +76,8 @@ bot.on("message", async (msg) => {
 });
 
 const sendDailyWeatherUpdates = async () => {
+
+  
   const subscribers = await getData();
   for(let i = 0; i < subscribers.length; i++){
     let subscriberId = subscribers[i]._id;
@@ -92,7 +87,6 @@ const sendDailyWeatherUpdates = async () => {
   }
 }
 
-// Schedule the function to run at 8 AM every day
 cron.schedule("0 8 * * *", () => {
   sendDailyWeatherUpdates();
 });

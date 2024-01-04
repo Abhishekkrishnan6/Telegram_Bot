@@ -16,7 +16,3 @@ const Connection = async (mongourl) => {
 export default Connection;
 
 
-// mongoose.connect('mongodb://127.0.0.1:27017/washUp', {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-// })

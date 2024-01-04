@@ -5,6 +5,7 @@ dotenv.config();
 var key = process.env.WEATHER_API;
 
 const weatherReport = async (location) => {
+  
   var link = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${location}`;
   try {
     var response = await axios.get(link);

@@ -61,6 +61,6 @@ Contributions are welcome! If you have any suggestions or improvements for this 
 ## License
 This project is licensed under the MIT License.
 
-Acknowledgments
+## Acknowledgments
 This project was inspired by the need for daily weather updates on Telegram.
 Special thanks to the developers and contributors of the Node.js, Telegram Bot API, and Express libraries.

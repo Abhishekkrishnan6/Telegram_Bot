@@ -34,11 +34,17 @@ export const getData = async () => {
   }
 };
 
-export const getOneSubscriber = async (chatId) => {
-  try {
-    return await Subscriber.findOne({ _id: chatId });
-  } catch (error) {
-    console.log(error);
+export const getOneSubscriber = (chatId) => {
+  const subscriber = users.find(user => user.chatId === chatId);
+
+  if (subscriber) {
+    return {
+      chatId: subscriber.chatId,
+      location: subscriber.location,
+      blocked: subscriber.blocked || false, 
+    };
+  } else {
+    return null;
   }
 };
 
