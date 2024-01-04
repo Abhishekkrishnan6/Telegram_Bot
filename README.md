@@ -30,7 +30,7 @@ BOT_TOKEN=<YOUR-BOT-TOKEN>
 WEATHER_API=<YOUR-WEATHER-API>
 ```
 
-Usage
+## Usage
 Start the bot server:
 ```bash
 npm app.js
@@ -55,10 +55,10 @@ Access the admin panel by opening your web browser and navigating to http://loca
 
 Use the admin panel to manage bot settings and user accounts.
 
-Contributing
+## Contributing
 Contributions are welcome! If you have any suggestions or improvements for this project, feel free to open an issue or submit a pull request.
 
-License
+## License
 This project is licensed under the MIT License.
 
 Acknowledgments
