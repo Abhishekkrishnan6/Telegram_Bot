@@ -67,6 +67,3 @@ Special thanks to the developers and contributors of the Node.js, Telegram Bot A
 
 # Video Tutorial :-
 
-
-https://github.com/Abhishekkrishnan6/Telegram_Bot/assets/38767003/0842c193-414f-44aa-952c-de649901cbbe
-
