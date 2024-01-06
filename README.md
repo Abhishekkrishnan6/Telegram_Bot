@@ -31,20 +31,26 @@ WEATHER_API=<YOUR-WEATHER-API>
 ```
 
 ## Usage
-Start the bot server:
+### Start the bot server:
 ```bash
 npm app.js
 ```
-
-Start the admin panel server:
+### Start the admin panel server:
 ```bash
 cd admin-panel-react
+```
+Install all necessary modules
+```bash
+npm i 
+``` 
+Start admin panel
+```bash
 npm start
 ```
 
-Access the bot in Telegram and search for your bot's username.
+### Access the bot in Telegram and search for your bot's username.
 
-Use the following commands in the Telegram chat:
+### Use the following commands in the Telegram chat:
 
 ```bash
 /start: Starts the bot and displays a welcome message.

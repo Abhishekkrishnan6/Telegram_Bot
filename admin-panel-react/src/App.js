@@ -1,11 +1,15 @@
-// src/components/App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import BotSettings from './components/BotSettings';
 import UserManagement from './components/UserManagement';
+import { GoogleLogin } from 'react-google-login';
 
 const App = () => {
+  const responseGoogle = (response) => {
+    // Handle the Google login response
+    console.log(response);
+  };
+
   return (
     <Router>
       <div style={containerStyle}>
@@ -22,6 +26,14 @@ const App = () => {
               </Link>
             </li>
           </ul>
+          {/* Add Google login button */}
+          <GoogleLogin
+            clientId="605740529692-c5mrntg4g6prf3gjlph2b26t7meci1aq.apps.googleusercontent.com"
+            buttonText="Login with Google"
+            onSuccess={responseGoogle}
+            onFailure={responseGoogle}
+            cookiePolicy={'single_host_origin'}
+          />
         </nav>
 
         <Routes>
