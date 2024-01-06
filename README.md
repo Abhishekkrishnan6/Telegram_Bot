@@ -44,12 +44,12 @@ WEATHER_API=<YOUR-WEATHER-API>
 ```
 
 ## Usage1
-### Start the bot server:
+ Start the bot server:
 ```bash
 npm app.js
 ```
 ## Usage2
-### Start the admin panel server:
+ Start the admin panel server:
 ```bash
 cd admin-panel-react
 ```
