@@ -1,6 +1,19 @@
 # Telegram Weather Update Bot
 This project is a Telegram bot developed using Node.js that provides daily weather updates to subscribed users. It also includes an admin panel for managing bot settings and user accounts.
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#Installation)
+- [Usage1](#Start the bot server)
+- [Usage2](#Start the admin panel server:)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+This project is a Telegram bot developed using Node.js that provides daily weather updates to subscribed users. It also includes an admin panel for managing bot settings and user accounts.
+
 ## Features
 Users can subscribe to receive daily weather updates.
 Users can unsubscribe from receiving weather updates.
