@@ -6,8 +6,8 @@ This project is a Telegram bot developed using Node.js that provides daily weath
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#Installation)
-- [Usage1](# Usage1)
-- [Usage2](# Usage2)
+- [Usage1](#Usage1)
+- [Usage2](#Usage2)
 - [Contributing](#contributing)
 - [License](#license)
 
