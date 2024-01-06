@@ -6,8 +6,8 @@ This project is a Telegram bot developed using Node.js that provides daily weath
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#Installation)
-- [Usage1](#Start the bot server)
-- [Usage2](#Start the admin panel server:)
+- [Usage1](# Usage1)
+- [Usage2](# Usage2)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -43,11 +43,12 @@ BOT_TOKEN=<YOUR-BOT-TOKEN>
 WEATHER_API=<YOUR-WEATHER-API>
 ```
 
-## Usage
+## Usage1
 ### Start the bot server:
 ```bash
 npm app.js
 ```
+## Usage2
 ### Start the admin panel server:
 ```bash
 cd admin-panel-react
