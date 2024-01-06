@@ -73,7 +73,16 @@ Special thanks to the developers and contributors of the Node.js, Telegram Bot A
 https://github.com/Abhishekkrishnan6/Telegram_Bot/assets/38767003/cbf7e0af-64c7-4f77-bd3f-8cfb8ec88d39
 
 #Screenshorts  
+login using google option :- 
+![image](https://github.com/Abhishekkrishnan6/Telegram_Bot/assets/38767003/4d2fe84b-5fb2-469b-b3b0-4388ddb43c79)
+
+After login two options will be shown first to change bot api and second user Management
+
+
 ![image](https://github.com/Abhishekkrishnan6/Telegram_Bot/assets/38767003/521d45f9-ce44-42b9-af3b-efb23c9e81c8)
+
+Backen MongoDB
+
 
 ![image](https://github.com/Abhishekkrishnan6/Telegram_Bot/assets/38767003/225cfd8e-e0fe-43ee-a076-71a31e9290b6)
 
